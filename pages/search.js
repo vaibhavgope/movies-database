@@ -15,7 +15,6 @@ export default function Home() {
 
     return (
         <>
-            {console.log(movies)}
             <MoviesLayout movies={movies} />
         </>
     )
