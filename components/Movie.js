@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import config from '../pages/config/config'
+import config from '../config/config'
 import Link from 'next/link'
 import styles from './movies.module.css'
 
