@@ -10,6 +10,10 @@ export default function Header() {
     const handleSearch = () => {
         Router.push(`/search?term=${searchTerm}`)
     }
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter')
+            handleSearch()
+    }
     return (
         <>
             <Head>
@@ -29,6 +33,7 @@ export default function Header() {
                         value={searchTerm}
                         placeholder='Search for your favourite film'
                         onChange={(e) => setSearchTerm(e.target.value)}
+                        onKeyDown={handleKeyDown}
                     />
                     <button type="button" onClick={handleSearch}>Search</button>
                 </div>

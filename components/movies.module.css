@@ -2,3 +2,22 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(320px, 1fr));
 }
+
+.genre {
+  border: 1px solid black;
+  margin: 0.2rem;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.movie {
+  margin: 5px;
+}
+
+.main_card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
